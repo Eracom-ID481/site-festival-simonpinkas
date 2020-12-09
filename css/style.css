@@ -12,3 +12,15 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+.timetable .time-entry {
+  background-color: blue;
+}
+
+.timetable .time-entry.hip-hop {
+  background-color: black;
+}
+
+.timetable .time-entry.rock {
+  background-color: red;
+}

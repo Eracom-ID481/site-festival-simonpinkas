@@ -42,7 +42,10 @@ function drawTimetable(day) {
       // Date et heure de fin (année, mois, jour, heure, minute)
       new Date(2020, 10, 17, 13, 00),
       // URL Quand on clicke sur le lien
-      { url: "../artiste.html" }
+      {
+        url: "../artiste.html",
+        class: "rock",
+      }
     );
 
     // Deuxième événement
@@ -51,6 +54,14 @@ function drawTimetable(day) {
       "Bad Bonn",
       new Date(2020, 10, 17, 13, 00),
       new Date(2020, 10, 17, 15, 45),
+      { url: "../artiste.html" }
+    );
+
+    timetable.addEvent(
+      "Wilco",
+      "Bad Bonn",
+      new Date(2020, 10, 17, 18, 30),
+      new Date(2020, 10, 17, 23, 59),
       { url: "../artiste.html" }
     );
 
@@ -67,7 +78,10 @@ function drawTimetable(day) {
       "Le Bourg",
       new Date(2020, 10, 17, 10, 20),
       new Date(2020, 10, 17, 15, 30),
-      { url: "../artiste.html" }
+      {
+        url: "../artiste.html",
+        class: "hip-hop",
+      }
     );
 
     timetable.addEvent(
@@ -75,6 +89,13 @@ function drawTimetable(day) {
       "PTR",
       new Date(2020, 10, 17, 18, 30),
       new Date(2020, 10, 17, 19, 45),
+      { url: "../artiste.html" }
+    );
+    timetable.addEvent(
+      "Lambchop",
+      "PTR",
+      new Date(2020, 10, 17, 19, 46),
+      new Date(2020, 10, 17, 22, 45),
       { url: "../artiste.html" }
     );
     let renderer = new Timetable.Renderer(timetable);
@@ -94,6 +115,13 @@ function drawTimetable(day) {
     timetable.addEvent(
       "James McMurtry",
       "PTR",
+      new Date(2020, 10, 17, 14, 00),
+      new Date(2020, 10, 17, 15, 00),
+      { url: "../artiste.html" }
+    );
+    timetable.addEvent(
+      "Chris Stapleton",
+      "Le Bourg",
       new Date(2020, 10, 17, 14, 00),
       new Date(2020, 10, 17, 15, 00),
       { url: "../artiste.html" }
